@@ -39,7 +39,12 @@ const Engine = (function(global) {
 
   function render() {
     let rowImages = [
-      // place image files here
+      'images/water-block.png',   // Top row is water
+      'images/water-block.png',   // Top row is water
+      'images/water-block.png',   // Top row is water
+      'images/water-block.png',   // Top row is water
+      'images/water-block.png',   // Top row is water
+      'images/stone-block.png',   // Row 1 of 3 of stone
       ],
       numRows = 6,
       numCols = 5,
@@ -63,7 +68,10 @@ const Engine = (function(global) {
   function reset() {
   }
   Resources.load([
-    // insert images
+    'images/stone-block.png',   // Row 1 of 3 of stone
+    'images/water-block.png',   // Row 1 of 3 of stone
+    'images/char-boy.png',   // Row 1 of 3 of stone
+    'images/Selector.png',   // Row 1 of 3 of stone
   ]);
   Resources.onReady(init);
   global.ctx = ctx;
