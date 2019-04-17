@@ -20,7 +20,7 @@
       img.onload = function() {
         resourceCache[url] = img;
         if (isReady()) {
-          readyCallbacks.forEach(function(func) { func();});
+          readyCallbacks.forEach(function(func) { func(); });
         }
       };
       resourceCache[url] = false;
